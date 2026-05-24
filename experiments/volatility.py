@@ -2,7 +2,6 @@
 # Matplotlib for graphing visualized data   
 import numpy as np
 import matplotlib.pyplot as plot
-import random
 
 # Black-Scholes function
 from rerisk.pricing.black_scholes import black_scholes
@@ -21,8 +20,8 @@ def gradient_sim(prices, vol_range):
     return np.gradient(prices, vol_range)
 
 def main():
-    stock_price = random.randrange(100, 1000)
-    strike_price = random.randrange(100, 1000)
+    stock_price = 500
+    strike_price = 500
     time = 1
     rate = 0.05
 
